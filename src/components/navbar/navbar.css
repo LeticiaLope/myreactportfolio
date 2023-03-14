@@ -45,3 +45,62 @@
     cursor: pointer;
 
 }
+
+.__navbar-menu {
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+}
+
+.__navbar-menu svg {
+    cursor: pointer;
+}
+
+.__navbar-menu_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background: var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+    top: 40;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgba(0,0,0,0.2);
+
+}
+
+.__navbar-menu_container p {
+    margin: 1rem 0;
+}
+
+@media screen and (max-width: 1050px) {
+    .__navbar-links_container {
+        display: none;
+    }
+
+    .__navbar-menu {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .__navbar {
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .__navbar {
+        padding: 2rem;
+    }
+} 
+
+.__navbar-menu_container {
+    top: 20px;
+}
+
